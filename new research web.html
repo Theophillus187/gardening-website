@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenges Faced in Food Gardening</title>
+    <style>
+		
+		body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background: url("spraying-tomato-plant-spraying-neem-oil-shutterstock-com_17255.jpg") no-repeat center center fixed;
+		background-size: cover;
+		margin: 0;
+		padding: 0;
+		line-height: 1.6;
+		backdrop-filter: brightness(0.9);
+		}
+
+
+        header {
+            background: #2e6a35;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #225522;
+        }
+
+        .section {
+            margin: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        summary {
+            font-weight: bold;
+            color: #2e6a35;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        details {
+            margin-bottom: 15px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .calc {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            background: #2e6a35;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3e8e41;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Challenges Faced in Food Gardening</h1>
+</header>
+
+<div class="section">
+    <h2>What is Gardening and Why is it Important?</h2>
+    <p>Gardening involves growing and cultivating plants like vegetables, herbs, and flowers. It promotes self-sustainability, health, and community bonding while reducing environmental impact.</p>
+    <ul>
+        <li>Provides healthy, fresh food</li>
+        <li>Supports small-scale businesses</li>
+        <li>Encourages environmental stewardship</li>
+    </ul>
+    <div class="center">
+        <img src="garden pic.png" alt="Gardening Image">
+    </div>
+</div>
+
+<div class="section">
+    <h2>Common Gardening Challenges & Solutions</h2>
+
+    <details open>
+        <summary>1. Pests and Diseases</summary>
+        <p>Insects and animals damage plants and reduce yields.</p>
+        <ul>
+            <li>Use neem oil, garlic spray</li>
+            <li>Inspect plants regularly</li>
+            <li>Set up barriers or scarecrows</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>2. Soil Problems</summary>
+        <p>Bad soil leads to poor plant growth.</p>
+        <ul>
+            <li>Improve soil with compost and organic matter</li>
+            <li>Use raised beds or containers</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>3. Weather and Climate</summary>
+        <p>Extreme weather affects productivity.</p>
+        <ul>
+            <li>Use mulch, covers, and collect rainwater</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>4. Time and Maintenance</summary>
+        <p>Neglect causes poor growth.</p>
+        <ul>
+            <li>Create a regular care schedule</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>5. Water Management</summary>
+        <p>Over or under watering harms plants.</p>
+        <ul>
+            <li>Install drip systems and check soil before watering</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>6. Space and Sunlight</summary>
+        <p>Urban areas may lack enough light or room.</p>
+        <ul>
+            <li>Use mobile containers and grow compact plants</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>7. Cost</summary>
+        <p>Initial and ongoing gardening costs can be high.</p>
+        <ul>
+            <li>Start small, use recycled materials</li>
+            <li>Make your own compost and fertilizer</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>8. Human and Practical Challenges</summary>
+        <p>Beginners often make mistakes.</p>
+        <ul>
+            <li>Start with easy plants like beans or mint</li>
+            <li>Join local groups and learn online</li>
+        </ul>
+    </details>
+</div>
+
+<div class="section">
+    <h2>Garden Tool Cost Calculator</h2>
+    <p>Enter the quantity and price of each tool to calculate total startup cost:</p>
+
+    <div class="calc">
+        <label>Hand Trowel: </label>
+        <input type="number" id="qt1" placeholder="Qty">
+        <input type="number" id="pr1" placeholder="Price"><br>
+
+        <label>Hand Fork: </label>
+        <input type="number" id="qt2" placeholder="Qty">
+        <input type="number" id="pr2" placeholder="Price"><br>
+
+        <label>Watering Can: </label>
+        <input type="number" id="qt3" placeholder="Qty">
+        <input type="number" id="pr3" placeholder="Price"><br>
+
+        <label>Gardening Gloves: </label>
+        <input type="number" id="qt4" placeholder="Qty">
+        <input type="number" id="pr4" placeholder="Price"><br>
+
+        <label>Secateurs: </label>
+        <input type="number" id="qt5" placeholder="Qty">
+        <input type="number" id="pr5" placeholder="Price"><br>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <p class="total" id="totalDisplay"></p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Local Inspiration</h2>
+    <ul>
+        <li><strong>Mphoke Makwala:</strong> Built a broiler business and YouTube following.</li>
+        <li><strong>Vicky Mhlanga:</strong> Grows poultry despite limited resources.</li>
+        <li><strong>Asenathi Ngqobe:</strong> Young livestock farmer and student leader.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Tips for Beginners</h2>
+    <ul>
+        <li>Use recycled containers for planting</li>
+        <li>Buy seeds instead of mature plants</li>
+        <li>Start small and expand over time</li>
+    </ul>
+</div>
+
+<footer>
+    © 2025 Group C: Code Red | Gardening Education Initiative
+</footer>
+
+    <script>
+    function calculateTotal() {
+        // Collect quantities and prices using JavaScript
+        const quantities = [
+            parseFloat(document.getElementById("qt1").value) || 0,
+            parseFloat(document.getElementById("qt2").value) || 0,
+            parseFloat(document.getElementById("qt3").value) || 0,
+            parseFloat(document.getElementById("qt4").value) || 0,
+            parseFloat(document.getElementById("qt5").value) || 0
+        ];
+
+        const prices = [
+            parseFloat(document.getElementById("pr1").value) || 0,
+            parseFloat(document.getElementById("pr2").value) || 0,
+            parseFloat(document.getElementById("pr3").value) || 0,
+            parseFloat(document.getElementById("pr4").value) || 0,
+            parseFloat(document.getElementById("pr5").value) || 0
+        ];
+
+        // Calculate total using JavaScript logic
+        let total = 0;
+        for (let i = 0; i < quantities.length; i++) {
+            total += quantities[i] * prices[i];
+        }
+
+        // Display total in the DOM
+        document.getElementById("totalDisplay").innerText = "Total Cost: R" + total.toFixed(2);
+    }
+</script>
+
+
+</body>
+</html>
+
+
+<div class="section">
+    <h2>Java Program: Gardening Tool Budget Calculator</h2>
+    <p>Below is a Java program that lets a user input prices and quantities of gardening tools to calculate total cost.</p>
+    <pre style="background:#f4f4f4; padding: 15px; border-radius: 8px; overflow-x: auto;">
+<code>
+
+</code>
+</pre>
+</div>
+
+
+<footer>
+    © 2025 Group C: Code Red | Gardening Education Initiative
+</footer>
+
+<script>
+    function calculateTotal() {
+        let total = 0;
+        for (let i = 1; i <= 5; i++) {
+            const qty = parseFloat(document.getElementById(`qt${i}`).value) || 0;
+            const price = parseFloat(document.getElementById(`pr${i}`).value) || 0;
+            total += qty * price;
+        }
+        document.getElementById("totalDisplay").innerText = "Total Cost: R" + total.toFixed(2);
+    }
+</script>
+
+</body>
+</html>
